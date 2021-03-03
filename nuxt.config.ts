@@ -83,7 +83,9 @@ export default {
   server: {
     // ローカル開発環境のHTTPS化対応
     https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'cert/', 'localhost-key.pem')),
+      key: fs.readFileSync(
+        path.resolve(__dirname, 'cert/', 'localhost-key.pem'),
+      ),
       cert: fs.readFileSync(path.resolve(__dirname, 'cert/', 'localhost.pem')),
     },
   },
