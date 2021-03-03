@@ -10,7 +10,7 @@
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:css": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:css",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
