@@ -1,3 +1,5 @@
+import path from 'path'
+import fs from 'fs'
 import colors from 'vuetify/es5/util/colors'
 
 export default {
@@ -72,6 +74,15 @@ export default {
           success: colors.green.accent3,
         },
       },
+    },
+  },
+
+  // サーバーの設定
+  server: {
+    // ローカル開発環境のHTTPS化対応
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'cert/', 'localhost-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'cert/', 'localhost.pem')),
     },
   },
 

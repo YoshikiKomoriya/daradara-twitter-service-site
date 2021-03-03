@@ -88,3 +88,9 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Firebaseのキャッシュファイルなど
+.firebase
+
+# ローカル開発環境のHTTPS化用証明書
+cert/*.pem
