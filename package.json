@@ -8,7 +8,7 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
-    "lint:css": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore",
+    "lint:css": "stylelint \"**/*.{css,scss,sass,js,ts,vue}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:css",
     "test": "jest --passWithNoTests"
   },
